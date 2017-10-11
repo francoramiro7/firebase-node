@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script src="/jquery/dist/jquery.min.js"></script>
+<script src="/javascripts/init.js"></script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body onload="setImage()">
+<div class="centered">
+    <h2 id="mensaje" :style="styleObject" >{{seconds}}</h2>
+    <div>
+        <button type="button" class="btn btn-outline-primary center-size" onclick="readUserData()" style="margin-bottom: 10px" >Adivina!</button>
+    </div>
+    <div>
+        <a style="text-align:center " id="text"></a>
+    </div>
+    <div>
+        <img class="rounded center-size" id="img1" name="img1" src="images/loading.gif">
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
+<script src="/popper.js/dist/umd/popper.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/jqueryTest.js"></script>
+</body>
+</html>
+
